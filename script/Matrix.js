@@ -9,7 +9,7 @@ ctx.canvas.height = window.innerHeight;
 ctx.font = 'italic 15pt myFirstFont';
 ctx.fillStyle = '#FFFF00';
 
-var numberLines = 30;
+var numberLines = 60;
 var lines = [];
 var word = "THE MATRIX";
 
