@@ -108,6 +108,8 @@ canvas{font-family: myFirstFont;}
 	width: 500px;
 	text-align: center;
 	color:white;
+	border: 1px solid;
+	border-color: white;
 }
 
 .box
