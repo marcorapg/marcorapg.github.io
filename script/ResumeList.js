@@ -1,4 +1,5 @@
 $.get( "http://rarolabs.com.br:88/alunos.json", function( data ) {
+	$('.slideshow').html('');
 	$.each(data, function( index, value ) {
 		$('.slideshow').append(
 			$([
@@ -29,4 +30,4 @@ $(function () {
 		$('.slideshow div:last-child').fadeIn(3000).prependTo('.slideshow');
 
 	});	
-}); 
+});

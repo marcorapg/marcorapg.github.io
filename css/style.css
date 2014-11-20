@@ -101,7 +101,14 @@ html , body{
 
 canvas{font-family: myFirstFont;}
 
-.slideshow{ position: relative; }
+.slideshow
+{ 
+	position: relative; 
+	height: 500px;
+	width: 500px;
+	text-align: center;
+	color:white;
+}
 
 .box
 {
@@ -109,4 +116,10 @@ canvas{font-family: myFirstFont;}
 	width: 500px;
 	background-color:yellow;
 	position: absolute; 	
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
