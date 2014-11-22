@@ -6,7 +6,7 @@ time = 0;
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 
-ctx.font = 'italic 15pt myFirstFont';
+ctx.font = 'italic 15pt matrixFont';
 ctx.fillStyle = '#FFFF00';
 
 var numberLines = 60;

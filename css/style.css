@@ -1,18 +1,3 @@
-
-@media screen and (max-width:999px)
-{
-  .facet_sidebar {
-	background-color: black;
-  }
-}
-
-@media screen and (max-width:480px)
-{
-  .facet_sidebar {
-	background-color: green;
-  }
-}
-
 div {
 	background-color: #ffffff;
 	border: 1px solid black;
@@ -23,7 +8,7 @@ div {
 html { background: #000; }
 		
 @font-face {
-   font-family: myFirstFont;
+   font-family: matrixFont;
    src: url("../font/matrix code nfi.ttf");
 }
 
@@ -33,11 +18,17 @@ html , body{
 	margin: 0px;
 }
 
-canvas{font-family: myFirstFont;}
+canvas
+{
+	font-family: matrixFont;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
 
 section
 { 
-	width: 100%;
+	width: 99.9%;
 	position: relative; 
 	text-align: center;
 	padding: 0px 5%;
