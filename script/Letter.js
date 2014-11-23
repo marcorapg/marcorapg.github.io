@@ -14,27 +14,15 @@ function Letter (ctx, character, fixed){
 	this.ctx = ctx;
 	this.char = character;
 	this.status = 120;
-	this.fixed = false;
 	
 	this.drawLetter = function (x, y) 
 	{
-		if(!fixed)
-		{
-			this.ctx.globalAlpha = this.status/100 > 0 ? this.status/100 : 0;
-			
-			setLetterColor(this.ctx, this.status);
-			
-			this.ctx.fillText(String.fromCharCode(this.char), x, y);
-			this.status = this.status - 1;
-		} 
-		else
-		{
-			this.ctx.globalAlpha = 1;
-			ctx.fillStyle = '#FFFFFF';
-			ctx.shadowColor = '#FFFFFF';
-			ctx.shadowBlur = 30;
-			this.ctx.fillText(this.char, x, y);
-		}
+		this.ctx.globalAlpha = this.status/100 > 0 ? this.status/100 : 0;
+		
+		setLetterColor(this.ctx, this.status);
+		
+		this.ctx.fillText(String.fromCharCode(this.char), x, y);
+		this.status = this.status - 1;
 	};
 }
 

@@ -6,15 +6,28 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<canvas id="demo"></canvas><br>
+		<nav class="topBar">
+			<span class="linkGroup">
+				<a href="#dadospessoais" class="link">Dados pessoais</a>
+				<a href="#formacoes" class="link">Formações</a>
+				<a href="#experiencias" class="link">Experiências</a>
+				<a href="#linguas" class="link">Línguas</a>
+				<a href="#conhecimentos" class="link">Conhecimentos</a>
+				<a href="#curriculos" class="link">Currículos</a>
+			</span>
+			<a href="https://www.facebook.com/marcorapg"><div class="share facebook"></div></a>
+			<a href="https://plus.google.com/100775893180027937891/posts"><div class="share googleplus"></div></a>
+			<a href="mailto:marcorapg@gmail.com"><div class="share email"></div></a>
+			<a href="tel:553186357687"><div class="share phone"></div></a>
+		</nav>
 
-		<h1 class="box">MARCO RODOLFO ARAÚJO PEREIRA GONÇALVES</h1>
-		<section>
-			<div class="box">
-			a
+		<h1>MARCO RODOLFO ARAÚJO PEREIRA GONÇALVES</h1>
+		
+		<section id="dadospessoais" >
+			<div class="sections header">
+				<h2>Dados pessoais</h2>
 			</div>
-			<div class="box">
-				<h2>Dados pessoais:</h2>
+			<div class="sections content">
 				<p>Solteiro, brasileiro, 28 anos</p>
 				<p>RG: SP­35.461.364­9</p>
 				<p>CPF: 081.822.366­90</p>
@@ -25,9 +38,11 @@
 			</div>
 		</section>
 		
-		<section>
-			<div class="box">
-				<h2>Formações acadêmicas:</h2>
+		<section id="formacoes">
+			<div class="sections header">
+				<h2>Formações acadêmicas</h2>
+			</div>
+			<div class="sections content">				
 				<article>
 					<h3>Pós-graduação em Desenvolvimento de Aplicações Web</h3>
 					<p>Instituição: Pontifícia Universidade Católica Minas Gerais</p>
@@ -41,9 +56,12 @@
 				</article>
 			</div>
 		</section>
-		<section>
-			<div class="box">
-				<h2>Experiências profissionais:</h2>
+		
+		<section id="experiencias">
+			<div class="sections header">
+				<h2>Experiências profissionais</h2>
+			</div>
+			<div class="sections content">	
 				<article>
 					<h3>Analista de Sistemas - Sociedade Mineira de Cultura</h3>
 					<p>Desenvolvimento de aplicações Web em .NET MVC 5.</p>
@@ -59,9 +77,11 @@
 			</div>
 		</section>
 		
-		<section>
-			<div class="box">
-				<h2>Línguas:</h2>
+		<section id="linguas">
+			<div class="sections header">
+				<h2>Línguas</h2>
+			</div>
+			<div class="sections content">	
 				<article>
 					<h3>Inglês:</h3>
 					<ul>
@@ -83,9 +103,11 @@
 			</div>
 		</section>
 		
-		<section>
-			<div class="box">
-				<h2>Conhecimentos:</h2>
+		<section id="conhecimentos">
+			<div class="sections header">
+				<h2>Conhecimentos</h2>
+			</div>
+			<div class="sections content">
 				<table>
 					<thead>
 						<tr>
@@ -106,7 +128,7 @@
 			</div>
 		</section>
 		
-		<section>
+		<section id="curriculos">
 			<div id="backward" class="button buttonLeft">
 				
 			</div>
@@ -121,12 +143,9 @@
 				
 			</div>    
 		</section>
-	
 	</body>	
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="script/jqueryui/jquery-ui.min.js"></script>
-	<script src="script/Letter.js" type="text/javascript"></script>
-	<script src="script/Line.js" type="text/javascript"></script>
-	<script src="script/Matrix.js" type="text/javascript"></script> 
-	<script src="script/ResumeList.js" type="text/javascript"></script> 
+	<script src="script/SmoothScroll.js" type="text/javascript"></script>
+	<script src="script/ResumeList.js" type="text/javascript"></script>
 </html>

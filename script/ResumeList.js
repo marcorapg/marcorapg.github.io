@@ -3,8 +3,10 @@ $.get( "http://rarolabs.com.br:88/alunos.json", function( data ) {
 	$.each(data, function( index, value ) {
 		$('#slideshow').append(
 			$([			
-				"<div style='display:" + (index == 0 ? "block" : "none") + ";' id='slide" + index + "' class='box boxCurriculos'>",
-					"<p class='quote'>" + data[index].nome + "</p>",
+				"<div style='display:" + (index == 0 ? "block" : "none") + ";' id='slide" + index + "' class=''>",
+					"<a href=" + data[index].link_html + ">",
+						"<p class='quote'>" + data[index].nome + "</p>",
+					"</a>",
 					"<p class='credit'>" + data[index].mini_curriculo +"</p>",
 				"</div>"				
 			].join("\n"))
