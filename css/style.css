@@ -7,10 +7,6 @@ html , body{
 section
 { 
 	width: 100%;
-	--position: relative; 
-	--text-align: center;
-	--padding: 0px 5%;
-	--margin: 10px 0px;
 }
 
 h1
@@ -23,6 +19,11 @@ h2
 {
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
+}
+
+.bold
+{
+	font-weight: bold;
 }
 
 html
@@ -38,8 +39,8 @@ body
 
 .sections
 {
-	margin-right: 4.9%;
-	margin-left: 4.9%;
+	margin-right: 4.89%;
+	margin-left: 4.89%;
 
 	/* box shadow */
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
@@ -80,6 +81,24 @@ body
 	border-radius: 0px 0px 8px 8px;
 }
 
+.tableConhecimento
+{
+	width: 100%;
+	text-align: center;
+}
+
+tr, td, th
+{
+	border: 1px black solid;
+}
+
+th
+{
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
 /* ----------------------------------------------- LINKS ----------------------------------------------- */
 
 nav
@@ -113,6 +132,8 @@ a.link
 	
 	color: white;
 
+	border: 1px solid blue;	
+	
 	/* rounded corner */
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -125,54 +146,68 @@ a.link
 
 a.link:hover
 {
-	background-color: yellow;
-	color: black;
-	z-index: 99;
+	background-color: white;
+	color: blue;
+	border: 1px solid blue;
 }
 
 /* ----------------------------------------------- SLIDESHOW DE CURRÌCULOS ----------------------------------------------- */
 
 .button
 {
-	float:left;
-	width: 6.99%;
-	height:300px;
-	background-color: black;
 	cursor: pointer;
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin-top: 5px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
 }
 
 .buttonLeft
 {
-	border-top-left-radius:2em;   
-	border-bottom-left-radius:2em; 
 	background: url(../images/left.png) no-repeat center;    
-	background-color: white;
 	border: 1px solid black;
+	float: left;
 }
 
 .buttonRight
 {
-	border-top-right-radius:2em;
-	border-bottom-right-radius:2em;
 	background: url(../images/right.png) no-repeat center;
-	background-color: white;
 	border: 1px solid black;
+	float: right;
 }
 
 .slideshow
 {
-	float:left;			
-	width: 82.99%;
+	width: 100%;	
 	height:300px;
 	overflow:hidden;
 	background-color: white;
-	border: 1px solid black;
+	
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;	
 }
 
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+.name
+{
+	text-align: center;
+}
+
+.nomesAdjacentes
+{
+	height: 50px;
+	line-height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /* ----------------------------------------------- BARRA TOPO ----------------------------------------------- */
@@ -238,5 +273,9 @@ a.link:hover
 		vertical-align: initial;
 		display: initial;
 		line-height: initial;
+	}
+	.nomesAdjacentes
+	{
+		display: none;
 	}
 }
